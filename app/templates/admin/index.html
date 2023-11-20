@@ -4,9 +4,10 @@
 
 {% if current_user.is_authenticated %}
 <h1 class= "text-center text-info">CHAO MUNG DEN VOI BINH NGUYEN VO TAN</h1>
-<h2 class= "text-info">Chao {{ current_user.name }}</h2>
+<h2 class= "text-info">Chao {{ current_user.name }}!</h2>
 {% else %}
 <form method="post" action="/admin/login">
+  <!--  quan trong login phai la post-->
   <div class="mb-3 mt-3">
     <label for="email" class="form-label">Ten dang nhap:</label>
     <input type="text" class="form-control" id="email" name = "username" placeholder="Ten dang nhap" name="email">
